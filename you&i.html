@@ -1,250 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Snack Bar Menu</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFF4D1;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .menu-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .menu-section {
-            width: 100%;
-            margin-bottom: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-
-        .menu-section h2 {
-            width: 100%;
-            margin: 0;
-            padding: 10px;
-            background-color: #333;
-            color: black;
-            font-size: 20px;
-        }
-
-        .menu-item {
-            display: flex;
-            align-items: center;
-            width: calc(33.33% - 200px);
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 15px;
-        }
-
-        .menu-item img {
-            width: 80px;
-            height: 80px;
-            margin-right: 10px;
-            border-radius: 4px;
-        }
-
-        .menu-item .item-info {
-            flex: 1;
-        }
-
-        .menu-item h3 {
-            margin: 0;
-            color: #333;
-            font-size: 18px;
-        }
-
-        .menu-item p {
-            margin: 5px 0;
-            color: #777;
-            font-size: 14px;
-        }
-
-        /* Add more spacing */
-        .menu-container {
-            gap: 20px;
-        }
-
-        /* Media Query for Mobile Devices */
-        @media (max-width: 768px) {
-            .menu-item {
-                width: 100%;
-            }
-
-            .menu-item img {
-                width: 60px;
-                height: 60px;
-            }
-
-            .menu-item .item-info {
-                flex: auto;
-
-            }
-
-            .menu-section h2 {
-                font-size: 18px;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodCraft International</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a href="you&i.html">
-    <img src="you&i(1).png" width="280" height="210" alt="Image Description">
-</a>
-<h1>Snack Bar Menu</h1>
-<div class="menu-container">
-    <div class="menu-section">
-        <h2>Breakfast</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 1</h3>
-                <p>Description of Snack 1</p>
-                <p>Price: $X.XX</p>
-            </div>
+    <header>
+        <div class="container">
+            <h1>WoodCraft International</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 2</h3>
-                <p>Description of Snack 2</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
+    </header>
 
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 3</h3>
-                <p>Description of Snack 1</p>
-                <p>Price: $X.XX</p>
-            </div>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Beautiful Handcrafted Wooden Products</h2>
+            <p>Crafted with love and passion. Shipped worldwide.</p>
+            <a href="#products" class="btn">Shop Now</a>
         </div>
-        <!-- Add more breakfast items -->
-    </div>
+    </section>
 
-    <div class="menu-section">
-        <h2>Salads</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 3</h3>
-                <p>Description of Snack 3</p>
-                <p>Price: $X.XX</p>
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Wooden Bowl">
+                    <h3>Wooden Bowl</h3>
+                    <p>$45.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Wooden Chair">
+                    <h3>Wooden Chair</h3>
+                    <p>$150.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="product3.jpg" alt="Wooden Table">
+                    <h3>Wooden Table</h3>
+                    <p>$300.00</p>
+                </div>
+                <!-- Add more products as needed -->
             </div>
         </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 4</h3>
-                <p>Description of Snack 4</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more salad items -->
-    </div>
+    </section>
 
-    <div class="menu-section">
-        <h2>Appetizers</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 5</h3>
-                <p>Description of Snack 5</p>
-                <p>Price: $X.XX</p>
-            </div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At WoodCraft International, we believe in the beauty of natural materials and the craftsmanship that brings them to life. Our products are made from the finest woods, and each piece is unique, with its own story to tell. We ship our products worldwide, ensuring that everyone can enjoy the beauty of handcrafted wood.</p>
         </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 6</h3>
-                <p>Description of Snack 6</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more appetizer items -->
-    </div>
+    </section>
 
-    <div class="menu-section">
-        <h2>Pizza</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 7</h3>
-                <p>Description of Snack 7</p>
-                <p>Price: $X.XX</p>
-            </div>
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@woodcraftinternational.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Woodcraft Lane, Artisan City, Country</p>
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
         </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 8</h3>
-                <p>Description of Snack 8</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more pizza items -->
-    </div>
-
-    <div class="menu-section">
-        <h2>Sauce</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 9</h3>
-                <p>Description of Snack 9</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 10</h3>
-                <p>Description of Snack 10</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more sauce items -->
-    </div>
-
-    <div class="menu-section">
-        <h2>Desserts</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 11</h3>
-                <p>Description of Snack 11</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 12</h3>
-                <p>Description of Snack 12</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more dessert items -->
-    </div>
-
-    <div class="menu-section">
-        <h2>Smoothies</h2>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 13</h3>
-                <p>Description of Snack 13</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <div class="menu-item">
-            <div class="item-info">
-                <h3>Snack 14</h3>
-                <p>Description of Snack 14</p>
-                <p>Price: $X.XX</p>
-            </div>
-        </div>
-        <!-- Add more smoothie items -->
-    </div>
-    <!-- Add more menu sections as needed -->
-</div>
+    </footer>
 </body>
 </html>
